@@ -9,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { AdapterDateFns }  from '@mui/x-date-pickers/AdapterDateFns';
+import { pl } from 'date-fns/locale/pl';
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 
 const Book = ({setBooks, bookId, bookTitle, bookStart, bookEnd}) => {
@@ -67,7 +68,7 @@ const Book = ({setBooks, bookId, bookTitle, bookStart, bookEnd}) => {
                       variant="standard"
                       onChange={e => setNewUpdateBookTitle(e.target.value)}
             />
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={pl}>
               <DatePicker
                   label="Start Date" 
                   openTo="day"

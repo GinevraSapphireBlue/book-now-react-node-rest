@@ -4,7 +4,7 @@ import BookSchedule from './components/Booklist';
 function App() {
   return (
     <div className="App">
-    <h1>📚 BookNow 📚</h1>
+    <h1>📚 Reading and listening 📚</h1>
      <BookSchedule />
     </div>
   );
